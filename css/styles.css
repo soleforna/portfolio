@@ -1,0 +1,173 @@
+@import url("https://fonts.googleapis.com/css2?family=Monoton&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Mina:wght@400;700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+/* Primera sección */
+
+.main {
+  width: 100%;
+  height: 100vh;
+
+  display: flex;
+  flex-direction: row;
+}
+
+.main-details,
+.main-img {
+  width: 40%;
+  height: 100vh;
+  font-family: "Mina", sans-serif;
+}
+
+.main-details {
+  width: 50%;
+  background-color: #e1bee7;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.main-details-info {
+  width: 60%;
+  margin: auto;
+}
+
+.main-details h2,
+.main-details h1 {
+  font-size: 2.5vmax;
+  word-spacing: 0.5rem;
+}
+
+.main-details h1 span {
+  font-family: "Monoton", sans-serif;
+  letter-spacing: 3px;
+  color: #E040FB;
+}
+
+.text-container {
+  background-color: #7b1fa2;
+  padding: 1rem;
+  border-radius: 0.5rem;
+  margin: 2rem 0;
+  
+
+  color: #ffffff;
+  text-align: center;
+}
+
+.text-container p {
+  margin: 0;
+  font-size: 1.1vmax;
+}
+
+.info{
+    font-size: 0.9vmax;
+}
+.btn-about {
+  position: relative;
+  background-color: #7b1fa2;
+
+  width: fit-content;
+  padding: 1rem;
+
+  margin: 2rem auto;
+  border-radius: 0.5rem;
+  
+
+  transition: all 0.2s ease;
+}
+
+.btn-about:hover{
+   
+    
+    box-shadow: 0 5px 25px 5px #E040FB; 
+    outline: 1px solid #E040FB;
+    
+    
+}
+
+.btn-about a {
+  text-decoration: none;
+  color: #ffffff;
+  letter-spacing: 2px;
+  padding: 1rem;
+  font-size: 1.1vmax;
+}
+
+.main-img {
+  width: 50%;
+  background-color: #000000;
+  background-image: url("https://images.unsplash.com/photo-1534528741775-53994a69daeb?q=80&w=1964&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+@media screen and (max-width: 1000px) {
+  .main {
+    flex-direction: column-reverse;
+  }
+
+  .main-details,
+  .main-img {
+    width: 100%;
+  }
+
+  .main-details {
+    height: 50%;
+
+    justify-content: flex-start;
+
+    padding-top: 2rem;
+  }
+
+  .main-details-info {
+    width: 90%;
+  }
+
+  .main-details h2,
+  .main-details h1 {
+    font-size: 3vmax;
+  }
+
+  .text-container {
+    width: fit-content;
+    margin-top: 1rem;
+  }
+
+  .text-container p {
+    font-size: 1.5vmax;
+  }
+
+  .info {
+    margin-top: 0.5rem;
+    font-size: 2vmax;
+  }
+
+  .btn-about{
+    padding: 0.5rem;
+    margin-top: 0;
+  }
+
+  .btn-about a{
+    font-size: 1.5vmax;
+  }
+
+  .main-img {
+    height: 50%;
+  }
+}
+
+
+/* Segunda sección */
+
