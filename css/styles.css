@@ -8,8 +8,13 @@
 
 html {
   scroll-behavior: smooth;
+
+  
 }
 
+body{
+    background-color: #BDBDBD;
+}
 /* Primera sección */
 
 .main {
@@ -51,7 +56,7 @@ html {
 .main-details h1 span {
   font-family: "Monoton", sans-serif;
   letter-spacing: 3px;
-  color: #E040FB;
+  color: #e040fb;
 }
 
 .text-container {
@@ -59,7 +64,6 @@ html {
   padding: 1rem;
   border-radius: 0.5rem;
   margin: 2rem 0;
-  
 
   color: #ffffff;
   text-align: center;
@@ -70,8 +74,8 @@ html {
   font-size: 1.1vmax;
 }
 
-.info{
-    font-size: 0.9vmax;
+.info {
+  font-size: 0.9vmax;
 }
 .btn-about {
   position: relative;
@@ -82,18 +86,13 @@ html {
 
   margin: 2rem auto;
   border-radius: 0.5rem;
-  
 
   transition: all 0.2s ease;
 }
 
-.btn-about:hover{
-   
-    
-    box-shadow: 0 5px 25px 5px #E040FB; 
-    outline: 1px solid #E040FB;
-    
-    
+.btn-about:hover {
+  box-shadow: 0 5px 25px 5px #e040fb;
+  outline: 1px solid #e040fb;
 }
 
 .btn-about a {
@@ -154,20 +153,105 @@ html {
     font-size: 2vmax;
   }
 
-  .btn-about{
+  .btn-about {
     padding: 0.5rem;
     margin-top: 0;
   }
 
-  .btn-about a{
+  .btn-about a {
     font-size: 1.5vmax;
   }
 
   .main-img {
     height: 50%;
   }
-}
 
+ /*  .menu-items{
+    font-size: 1.8vmax;
+  } */
+}
 
 /* Segunda sección */
 
+.about,
+.tecnologies,
+.proyects,
+.contacts {
+  width: 100%;
+  height: 100vh;
+  background-color: #bdbdbd;
+}
+
+.tecnologies{
+    background-color: antiquewhite;
+}
+
+.contacts{
+    background-color: aqua;
+}
+#sidebar-wrapper {
+    width: 250px;
+  min-width: 250px;
+  background-color: #9c27b0;
+  height: 100vh;
+
+  display: flex;
+  flex-direction: column;
+
+  position: sticky;
+ 
+  top:0;
+  
+ 
+  
+}
+
+.sidebar-img {
+  width: 250px;
+  height: auto;
+}
+
+.menu {
+  flex-grow: 1;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+
+  margin: 1.5rem 0;
+  padding: 0;
+
+  font-size: 1vmax;
+}
+
+.menu-items {
+  align-self: center;
+
+  font-family: "Mina", sans-serif;
+  font-size: 1.5rem;
+
+  padding: 0.5rem;
+
+  list-style-type: none;
+}
+
+
+
+.menu-items a {
+  color: #ffffff;
+  letter-spacing: 2px;
+  text-decoration: none;
+}
+
+/* #wrapper.toggled #sidebar-wrapper {
+    width: 0;
+} */
+
+/* #page-content-wrapper {
+    transition: all 0.3s ease;
+}
+ */
+/* #wrapper.toggled #page-content-wrapper {
+    margin-right: 0;
+}
+ */
