@@ -224,7 +224,7 @@ background-color: #9c27b0;
 #sidebar-wrapper {
   width: fit-content;
   min-width: 250px;
-  background-color: #9c27b0;
+  background-color: #e1bee7;
   height: 100vh;
 
   display: flex;
@@ -273,10 +273,37 @@ background-color: #9c27b0;
   padding: 0.5rem;
 
   list-style-type: none;
+
+  
 }
 
 .menu-items a {
-  color: #ffffff;
+  color: #212121;
   letter-spacing: 2px;
   text-decoration: none;
+  
+}
+
+.menu-items a::after{
+  content: '';
+  display: block;
+  height: 3px;
+  background-color: #e040fb;
+  transform: scale(0,1);
+  transition: transform .25s;
+}
+.menu-items:hover{
+  text-shadow: 0 5px 5px #E040FB;
+}
+
+
+.menu-items a.selected {
+  text-shadow: 0 5px 5px #E040FB;
+ 
+}
+
+.menu-items a.selected::after{
+  
+  transform: scale(1,1)
+
 }
