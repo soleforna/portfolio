@@ -8,12 +8,10 @@
 
 html {
   scroll-behavior: smooth;
-
-  
 }
 
-body{
-    background-color: #BDBDBD;
+body {
+  background-color: #bdbdbd;
 }
 /* Primera sección */
 
@@ -114,10 +112,11 @@ body{
   background-position: center;
 }
 
+/* Estilos para dispositivos pequeños */
+
 @media screen and (max-width: 1000px) {
   .main {
     flex-direction: column-reverse;
-   
   }
 
   .main-details,
@@ -169,59 +168,83 @@ body{
   .main-img {
     height: 50%;
   }
-
- 
 }
 
-/* Segunda sección */
+/* Estilos para otras secciones */
 
 .about,
 .tecnologies,
 .proyects,
 .contacts {
   width: 100%;
-  height: 100vh;
+  min-height: 100vh;
   background-color: #bdbdbd;
 }
 
-.tecnologies{
-    background-color: antiquewhite;
+
+.about{
+ height: fit-content;
 }
 
-.contacts{
-    background-color: aqua;
+.section-title{
+  font-size: 4vmax;
+  letter-spacing: 2px;
+  text-align: center;
+  padding: 1rem;
+  border: #7b1fa2 double;
+  width: 90%;
+  margin: auto;
+  text-transform: uppercase;
+
+
 }
+
+.article-container{
+  width: 90%;
+  margin: auto;
+  padding-top: 2rem;
+}
+
+.row{
+  gap: 1vmax;
+  
+}
+.col{
+background-color: #9c27b0;
+}
+
+
+.col:hover {
+  box-shadow: 0 5px 25px 5px #e040fb;
+  outline: 1px solid #e040fb;
+}
+
+
+/* Estilos para la barra lateral */
 #sidebar-wrapper {
-width: fit-content; 
- min-width: 250px;
+  width: fit-content;
+  min-width: 250px;
   background-color: #9c27b0;
   height: 100vh;
 
   display: flex;
-  flex-direction: column; 
+  flex-direction: column;
 
   position: sticky;
- 
-  top:0;
-  
- 
-  
+
+  top: 0;
 }
 
-@media screen and (max-width: 992px){
-  #sidebar-wrapper{
-   min-width: fit-content;
+@media screen and (max-width: 992px) {
+  #sidebar-wrapper {
+    min-width: fit-content;
   }
 
-  .sidebar-img{
+  .sidebar-img {
     width: 100px !important;
     height: auto;
-   
-
   }
-
-  
-} 
+}
 
 .sidebar-img {
   width: 250px;
@@ -230,8 +253,6 @@ width: fit-content;
 
 .menu {
   flex-grow: 1;
-
-  
 
   display: flex;
   flex-direction: column;
@@ -254,24 +275,8 @@ width: fit-content;
   list-style-type: none;
 }
 
-
-
 .menu-items a {
   color: #ffffff;
   letter-spacing: 2px;
   text-decoration: none;
 }
-
-
-/* #wrapper.toggled #sidebar-wrapper {
-    width: 0;
-} */
-
-/* #page-content-wrapper {
-    transition: all 0.3s ease;
-}
- */
-/* #wrapper.toggled #page-content-wrapper {
-    margin-right: 0;
-}
- */
